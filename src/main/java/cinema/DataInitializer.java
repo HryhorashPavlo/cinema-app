@@ -1,4 +1,4 @@
-package cinema.config;
+package cinema;
 
 import cinema.model.Role;
 import cinema.model.User;
@@ -31,10 +31,5 @@ public class DataInitializer {
         admin.setPassword("admin123");
         admin.setRoles(Set.of(adminRole));
         userService.add(admin);
-        User user = new User();
-        user.setEmail("pavlo.hryhorash@gmail.com");
-        user.setPassword("7940813");
-        user.setRoles(Set.of(userRole));
-        userService.add(user);
     }
 }

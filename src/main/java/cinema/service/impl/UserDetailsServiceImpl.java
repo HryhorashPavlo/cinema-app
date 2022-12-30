@@ -2,7 +2,6 @@ package cinema.service.impl;
 
 import static org.springframework.security.core.userdetails.User.withUsername;
 
-import cinema.model.Role;
 import cinema.model.User;
 import cinema.service.UserService;
 import java.util.Optional;
@@ -31,7 +30,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         builder.password(user.getPassword());
         builder.roles(user.getRoles()
                 .stream()
-                .map(Role::getRole)
+                .map(r -> r.getRole().name())
                 .toArray(String[]::new));
         return builder.build();
     }
