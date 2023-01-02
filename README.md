@@ -4,7 +4,8 @@
 This is a simulation of cinema  service for reservation tickets,
 that supports registration, authentication and CRUD operations. It was written in Java and Spring.
 All information is received in JSON format.
-#Features
+
+## Features
 - This program supports two type of roles:
   ADMIN and USER.
 - Register or login
